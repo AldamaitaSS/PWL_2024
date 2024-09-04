@@ -7,7 +7,13 @@ use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PhotoController;
 
+// PRAKTIKUM 3
 
+// Route::get('/greeting', function () {
+//     return view('blog.hello', ['name' => 'Aldamaita']);
+// });
+
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
 
 // PRAKTIKUM 2
 

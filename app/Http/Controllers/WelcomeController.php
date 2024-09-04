@@ -23,5 +23,16 @@ class WelcomeController extends Controller
     public function articles($id) {
         return "Halaman Artikel dengan ID " .$id;
     }
+
+    // PRAKTIKUM 3
+    // public function greeting(){
+    //     return view('blog.hello', ['name' => 'Aldamaita']);
+    // }
+
+    public function greeting(){
+        return view('blog.hello')
+        ->with('name','Aldamaita')
+        ->with('occupation','Astronaut');
+    }
 }
 
